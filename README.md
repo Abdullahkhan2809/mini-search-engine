@@ -1,4 +1,4 @@
-````markdown
+
 # Mini Search Engine
 
 ![C++](https://img.shields.io/badge/language-C++-blue?style=flat-square)
@@ -8,7 +8,7 @@
 A **C++ project** that searches and ranks text files using data structures and algorithms.  
 It builds an **inverted index** to store words and their document locations and uses the **TF-IDF** method to rank and display the most relevant results for a user’s query.
 
----
+
 
 ## 📑 Table of Contents
 
@@ -21,7 +21,7 @@ It builds an **inverted index** to store words and their document locations and 
 - [Author](#-author)  
 - [License](#-license)  
 
----
+
 
 ## 📝 Features
 
@@ -39,7 +39,7 @@ It builds an **inverted index** to store words and their document locations and 
    ```bash
    git clone https://github.com/YourUsername/mini-search-engine.git
    cd mini-search-engine
-````
+`
 
 2. **Build the project using g++:**
 
@@ -83,16 +83,14 @@ Search results:
 ## 🧠 How It Works
 
 ### Indexing Workflow
-
 ```mermaid
 flowchart TD
     A[User enters folder path] --> B[Read all supported files]
     B --> C[Tokenize content and filenames]
-    C --> D[Build inverted index (token → posting list)]
+    C --> D[Build inverted index: token → posting list]
     D --> E[Calculate document lengths and TF-IDF stats]
     E --> F[Index ready for search queries]
 ```
-
 ### Search Workflow
 
 ```mermaid
@@ -106,17 +104,6 @@ flowchart TD
 
 ---
 
-## 📁 Directory Structure
-
-```
-/src       -> C++ source files (.cpp, .h)
-/tests     -> Sample input documents and expected outputs
-/docs      -> Project report, figures, diagrams
-README.md  -> This file
-Makefile or CMakeLists.txt -> Build automation
-```
-
----
 
 ## 🖼️ Screenshots
 
@@ -143,7 +130,7 @@ Search results:
 1) DocID: 22 Name: lab6task.cpp Score: 0.0470785
 2) DocID: 1 Name: doublylinkedlist.cpp Score: 0.030564
 3) DocID: 25 Name: tempCodeRunnerFile.cpp Score: 0.030564
-
+```
 
 ---
 
